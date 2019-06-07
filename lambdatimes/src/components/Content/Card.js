@@ -1,14 +1,16 @@
 import React from 'react';
+import pt from "prop-types";
 
 const Card = ({ props }) => {
+  const { headline, img, author } = props;
   return (
     <div className="card">
-      <div className="headline">{props.headline}</div>
+      <div className="headline">{headline}</div>
       <div className="author">
         <div className="img-container">
-          <img src={props.img /* image source goes here */} />
+          <img src={img /* image source goes here */}  alt="my own pix" />
         </div>
-        <span>By {props.author/* author goes here */}</span>
+        <span>By {author/* author goes here */}</span>
       </div>
     </div>
   );
@@ -17,3 +19,10 @@ const Card = ({ props }) => {
 // Make sure to include PropTypes.
 
 export default Card;
+
+
+Card.propTypes = {
+  headline: pt.string,
+  img: pt.string,
+  author: pt.string
+}
