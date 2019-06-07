@@ -29,7 +29,6 @@ export default class Content extends Component {
     this.setState({
       selected: tab
     })
-    console.log(tab);
   };
 
   filterCards = () => {
@@ -48,19 +47,10 @@ export default class Content extends Component {
    if(this.state.selected === 'all') {
     return this.state.cards;
    } else {
-    const selectedCards = cardData.map(card=>{
-      if(this.state.selected === card.tab){
-        return card
-      }
-      return card
-    })
-    return this.setState({
-      cards: selectedCards
-    })
+    const selectedCards = cardData.filter(card=> card.tab === this.state.selected)
+
+    return selectedCards
    }
-   
-   
-    // return this.state.cards;
   };
 
   render() {
