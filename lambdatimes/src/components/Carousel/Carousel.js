@@ -16,15 +16,29 @@ export default class Carousel extends Component {
   }
 
   leftClick = () => {
-    this.setState(st=>({
-  selected: st.selected + 1 
-    }))
+    if(this.state.selected <= 3) {
+      this.setState(st=>({
+        selected: st.selected + 1 
+          }))
+    } else {
+      this.setState(st=>({
+        selected: 3 
+          }))
+    }
+   
   }
 
   rightClick = () => {
-    this.setState(st=>({
-      selected: st.selected - 1 
-        }))
+    if(this.state.selected >= 3){
+      this.setState(st=>({
+        selected: st.selected - 1 
+          }))
+    } else {
+      this.setState(st=>({
+        selected: 0 
+          }))
+    }
+    
   }
 
   selectedImage = () => {
