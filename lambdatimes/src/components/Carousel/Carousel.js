@@ -25,7 +25,6 @@ export default class Carousel extends Component {
         selected: st.selected - 1
       }));
     }
-    console.log(this.state.selected);
   };
 
   rightClick = () => {
@@ -38,7 +37,6 @@ export default class Carousel extends Component {
         selected: st.selected + 1
       }));
     }
-    console.log(this.state.selected);
   };
 
   selectedImage = () => {

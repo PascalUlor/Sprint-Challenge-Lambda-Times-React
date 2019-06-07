@@ -2,7 +2,6 @@ import React from 'react';
 import pt from "prop-types";
 import Tab from './Tab';
 const Tabs = props => {
-  console.log(props)
   const { tabs, selectedTab, selectTabHandler } = props;
   return (
     <div className="tabs">
