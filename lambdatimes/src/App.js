@@ -3,6 +3,7 @@ import TopBar from './components/TopBar';
 import Header from './components/Header';
 import Content from './components/Content/Content';
 import Carousel from './components/Carousel/Carousel';
+import Modal from './components/Login/Modal';
 
 const App = () => {
   return (
@@ -11,6 +12,7 @@ const App = () => {
       <Header />
       <Carousel />
       <Content />
+      <Modal />
     </div>
   );
 }
