@@ -76,15 +76,15 @@ display: flex;
 
 const TopBar = () => {
   return (
-    <TopBarStyle /*className="top-bar"*/>
-      <Container /*className="container"*/>
-        <ContainerLeft /*className="container-left"*/>
+    <TopBarStyle>
+      <Container>
+        <ContainerLeft>
           <span>TOPICS</span><span>SEARCH</span>
         </ContainerLeft>
-        <ContainerCenter /*className="container-center"*/>
+        <ContainerCenter>
           <span>GENERAL</span><span>BROWNBAG</span><span>RANDOM</span><span>MUSIC</span><span>ANNOUNCEMENTS</span>
         </ContainerCenter>
-        <ContainerRight /*className="container-right"*/>
+        <ContainerRight>
           <span>LOG IN</span>
         </ContainerRight>
       </Container>
